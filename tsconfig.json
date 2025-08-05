@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "compilerOptions":{
+    "target": "es5",
+    "module": "esnext",
+  },
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
