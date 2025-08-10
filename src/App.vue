@@ -7,7 +7,7 @@ import router from './router'
   <header class="block w-full bg-black px-10 py-4 mb-4">
     <nav class="flex justify-start items-center gap-8">
       <RouterLink
-        v-for="link in router.getRoutes()"
+        v-for="link in router.options.routes"
         :key="link.name"
         :to="link.path"
         class="aria-[current='page']:text-green-500 aria-[current='page']:underline capitalize"
