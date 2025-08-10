@@ -4,6 +4,7 @@ import ClassBinding from '@/views/ClassBinding.vue'
 import ListBinding from '@/views/ListBinding.vue'
 import ListDetails from '@/views/ListDetails.vue'
 import NotFound from '@/views/NotFound.vue'
+import FormBindingView from '@/views/FormBindingView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,11 @@ const router = createRouter({
       path: '/list-binding',
       name: 'List Binding',
       component: ListBinding,
+    },
+    {
+      path: '/form-input-binding',
+      name: 'Form Input Binding',
+      component: FormBindingView,
     },
     {
       path: '/list-binding/:id',
