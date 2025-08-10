@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, reactive } from 'vue'
+import { reactive } from 'vue'
 
 const hello = reactive({
   count: 4,
@@ -9,11 +9,12 @@ const updateCount = () => {
   hello.count += 5
 }
 const seen = true
+const ok = true
 </script>
 
 <template>
   <main>
-    <p>
+    <p v-show="ok">
       <strong>This page shows: Class Binding</strong>
     </p>
     <p
